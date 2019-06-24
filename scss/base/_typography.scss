@@ -1,0 +1,20 @@
+
+body {
+    line-height: 1.5;
+    font-family: $font-family-body;
+    color: $color-grey;
+    font-size: 0.8rem;
+}
+
+h1 {
+    font-family: $font-family-headings;
+    color: $color-dark-blue;
+    font-size: 1.5rem;
+    line-height: 1.25;
+}
+
+h2 {
+    font-family: $font-family-headings;
+    color: $color-dark-blue;
+    font-size: 1rem;
+}

@@ -1,0 +1,16 @@
+.cta {
+    background-color: $color-green;
+    color: white;
+    font-family: inherit;
+    font-weight: 700;
+    padding: 10px 40px;
+    border-radius: 3px;
+    box-shadow: 1px 1px 5px 0px hsla(0, 0%, 50%, 0.2);
+}
+
+@media ( min-width: 550px ) {
+    .cta {
+        display: inline-block;
+
+    }
+}

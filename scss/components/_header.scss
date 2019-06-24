@@ -1,3 +1,47 @@
-.header--logo {
-    content: url('../../images/logo.svg')
+.header {
+
+    max-width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 0;
+    z-index: 10;
+
+    &-container {
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+    }
+    
+
+    &--logo {
+        content: url('../../images/logo-white.svg');
+        transform: scale(0.9);
+    }
+
+    &--social {
+        color: white;
+        font-size: 1rem;
+
+        i:not(:last-child) {
+            padding-right: 20px;
+        }
+    }
+}
+
+@media ( min-width: 550px ) {
+    .header {
+        &-container {
+            position: absolute;
+        }
+
+        &--logo {
+            content: url('../../images/logo-black.svg');
+        }
+
+        &--social {
+            color: black;
+        }
+    }
 }

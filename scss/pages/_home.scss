@@ -1,0 +1,122 @@
+.page-bg-image {
+
+    &--intro {
+        width: 100%;
+        position: relative;
+        background-image: url("../images/bg-intro.svg");
+        background-position: center;
+        background-size: 100%;
+        background-repeat: no-repeat;
+        min-height: 445px;
+    }
+
+    &--illustration {
+        width: 100%;
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        background-image: url("../images/illustration-main.svg");
+        background-position: center;
+        background-size: 60%;
+        background-repeat: no-repeat;
+    }
+}
+
+.main {
+    position: relative;
+
+    &--header {
+        padding-bottom: 20px;
+    }
+
+    &--content {
+        padding-bottom: 40px;
+    }
+
+    &--signup {
+        padding-bottom: 15px;
+
+        &-input {
+            width: 100%;
+            border: 1px solid hsla(0, 0%, 50%, 0.2);
+            box-shadow: 0px 0px 5px 0px hsla(0, 0%, 50%, 0.2);
+            border-radius: 2px;
+            padding: 10px;
+            margin-bottom: 20px;
+        }
+    }
+
+    &--form {
+        padding-bottom: 30px;
+    }
+
+    &--privacy-policy {
+        display: inline-block;
+        width: 100%;
+        text-align: right;
+        color: $color-grey;
+        font-size: 0.7rem;
+        padding-bottom: 30px;
+    }
+}
+
+@media ( min-width: 550px ) {
+    body {
+        display: flex;
+        
+    }
+
+    .page-wrapper {
+        display: flex;
+    }
+
+    .main {
+        flex-basis: 55%;
+        &-container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            height: 100%;
+        }
+
+        &--form {
+            display: flex;
+        }
+
+        &--signup {
+            &-input {
+                margin-bottom: 0;
+            }
+
+            &-button {
+                margin-left: 10px;
+                flex-shrink: 0;
+            }
+        }
+    }
+
+    .page-bg-image--intro {
+        flex-basis: 45%;
+        background-image: none;
+        background: rgb(2,0,36);
+        background: linear-gradient(45deg, hsl(244, 42%, 64%), hsl(244, 83%, 23%) 80%);
+        height: 100vh;
+    }
+}
+
+@media ( min-width: 1440px ) {
+    .page-bg-image {
+        &--illustration {
+            margin-left: calc((100vw - 1440px) * 0.45);
+            width: calc(100% - ((100vw - 1440px) * 0.45));
+        }
+    }
+    .container {
+        margin-left: 10%;
+        margin-right: calc((100vw - 1440px) * 0.55);
+        width: calc(100% - ((100vw - 1440px) * 0.55));
+        max-width: 80%;
+    }
+}

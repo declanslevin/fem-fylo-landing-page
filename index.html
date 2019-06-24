@@ -5,32 +5,30 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Beta sign up split layout Challenge</title>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+  <link rel="stylesheet" href="./css/styles.min.css">
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <title>Frontend Mentor | Beta sign up split layout Challenge</title>
 </head>
 <body>
-  All your files in one secure location, accessible anywhere.
-
-  Fylo stores all your most important files in one secure location. 
-  Access them wherever you need, share and collaborate with friends, 
-  family and co-workers.
-
-  Sign up for early access
-
-  Sign Up
-
-  Privacy Policy
-
-  <footer>
-    <p class="attribution">
-      This page started life as a challenge on <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a> 🎉
-    </p>
-  </footer>
+  <header class="header">
+    <i class="header--logo"></i>
+    <div class="header--social">
+      <i class="fab fa-twitter"></i>
+      <i class="fab fa-facebook-f"></i>
+      <i class="fas fa-envelope"></i>
+    </div>
+  </header>
+  <main>
+    <h1 class="main--header">All your files in one secure location, accessible anywhere.</h1>
+    <p class="main--content">Fylo stores all your most important files in one secure location. 
+        Access them wherever you need, share and collaborate with friends, 
+        family and co-workers.</p>
+    <h2 class="main--signup">Sign up for early access</h2>
+    <input type="text" class="main--signup-input">
+    <button class="main--signup-button">Sign Up</button>
+    <a href="#" class="main--privacy-policy">Privacy Policy</a>
+  </main>
+  
 </body>
 </html>
